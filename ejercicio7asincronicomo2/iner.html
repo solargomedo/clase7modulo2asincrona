@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+          width: 500px;
+          height: 100px;
+          background-color: rgb(206, 101, 196);
+        }
+      </style>
+</head>
+<body>
+    <h1>Ejercicio asincronico 7</h1>
+   <!-- 1. Creá un documento HTML con un <div> dentro.
+        2. Usando la Propiedad style del elemento en JavaScript, dale a ese <div>
+         altura, ancho y un color de fondo.-->
+    <div id="divUno"></div>
+
+<script>
+
+document.querySelector("h1").textContent="Cambiando el titulo"
+;
+// 3. Por consola, cambiá el título por un párrafo con un texto a elección.
+document.querySelector("h1").innerHTML="<p>Cambiado por un parrafo</p>"
+
+// 4. Por consola, agregá otro párrafo al <body> con un texto a elección.
+//● Para agregar otro párrafo al <body>, usá appendChild.
+
+    const pNuevo=document.createElement("p");
+    pNuevo.innerHTML= "<p>Se agrego un parrafo al body</p>"
+    const bodyNuevo = document.querySelector("body");
+    bodyNuevo.appendChild(pNuevo);
+
+/*  3. Creá la clase .square en tu stylesheet, y dale las mismas Propiedades.*/
+
+    divUno.classList.add('square');
+
+/* 5. Desde tu consola, sacá la clase .square al <div>. */
+   
+    divUno.classList.remove("square");
+
+/* Hacé una Función que cada un segundo (setInterval()) se fije si tiene la
+   clase .square. Si la tiene, que se la quite; si no la tiene, que se la agregue.
+   PISTA: Si lo hiciste con un if y un else no está mal… pero probá usando
+   classList.toggle(). Mucho más simple, ¿no?*/
+
+   setInterval(function () {
+            divUno.classList.toggle("square")}, 1000);
+         
+
+</script>
+
+
+   <!--
+
+  
+
+  
+   
+ 
+   6. Hacé una Función que cada un segundo (setInterval()) se fije si tiene la
+   clase .square. Si la tiene, que se la quite; si no la tiene, que se la agregue.
+   PISTA: Si lo hiciste con un if y un else no está mal… pero probá usando
+   classList.toggle(). Mucho más simple, ¿no?-->
+   
+</body>
+</html>

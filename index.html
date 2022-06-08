@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    1. En tu HTML creá un <div> con ID source y otro con ID destination (ambos con
+        texto dentro).
+        2. Seleccioná ambos y guardalos en sus respectivas Variables.
+        3. Luego, intercambiá el contenido entre ambos <div> (es decir, que el texto del
+        <div> de ID source pase al de ID destination y viceversa).     -->
+
+       <div id="soucer"> 
+        <p>Holaaaaaaaaa</p>
+
+    </div>
+       <div id="destinatario">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione numquam minima, ducimus fuga aliquam vero animi officiis voluptate reprehenderit facilis eaque neque temporibus! Optio voluptatibus atque quo praesentium quia?</p>
+           
+       </div> 
+   <script>
+
+    const d1 = document.querySelector("#soucer")
+    const d2 = document.querySelector("#destinatario")
+    const cambio = d1.innerHTML
+    d1.innerHTML = d2.innerHTML;
+    d2.innerHTML = cambio;
+      
+   
+
+
+
+
+
+
+    //ejercicio 4 modulo2
+     /* En este ejercicio deberás escribir una función llamada contarDeA_n que tenga los
+Parámetros contar_de_a y contar_hasta Además, deberá escribir en la consola los
+números desde el 1 hasta contar_hasta en intervalos de contar_de_a.
+PISTA: Si ponemos 2 y 10 como Argumentos en el llamado, la Función deberá contar de a
+dos hasta llegar a diez.*/
+//                      2           10
+/*function contarDeA_n(contar_de_a, contar_hasta){
+   
+    for(i=0; i<=contar_hasta; i++){
+        console.log(i)    
+    i=i + contar_de_a
+}  
+}
+console.log(contarDeA_n(2, 10))
+
+
+function contarDeA_n(contar_de_a, contar_hasta){
+      let i = 1
+      while( i <= contar_hasta){
+        console.log(i)
+        i = i + contar_de_a
+      }
+      i++
+      
+    }
+      console.log(contarDeA_n(2, 10))*/
+
+
+
+
+   </script>
+</body>
+</html>
